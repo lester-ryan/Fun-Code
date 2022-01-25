@@ -10,6 +10,7 @@ bookFile.close() # close the file
 
 text = re.sub('[^a-zA-Z0-9 \n]', ' ', text)
 text = re.sub(r'\b\w{1,4}\b', '', text)
+# ommit characters and words less than 4 letters
 
 text_list = text.split() # create a list
 
